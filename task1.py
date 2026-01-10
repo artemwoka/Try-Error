@@ -12,4 +12,7 @@ def sum_of_digits(n):
         if digit < 5:
             с = с + digit
         n //= 10
-    return c
+    return с
+
+print(sum_of_digits(123456789))  # має повернути 10 (1+2+3+4)
+print(sum_of_digits(6789))       # має повернути 0
