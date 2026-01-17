@@ -20,5 +20,7 @@ try:
     print(f"Рівень безробіття = {rate:.1%}")
 except ValueError:
     print("Помилка: введено некоректне значення. Будь ласка, введіть число.")
+except ZeroDivisionError as zde:
+    print(f"Помилка: {zde}")
 except Exception as e:
     print(f"Сталася помилка: {e}")
